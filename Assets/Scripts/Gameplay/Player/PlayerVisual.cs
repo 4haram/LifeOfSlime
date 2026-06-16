@@ -4,12 +4,13 @@ namespace Gameplay.Player
     public class PlayerVisual : MonoBehaviour
     {
         private SpriteRenderer spriteRenderer;
-        public Animator Animator { get; private set; }
+        private Animator animator;
+        public Animator Animator => animator;
         public SpriteRenderer SpriteRenderer => spriteRenderer;
         private void Awake()
         {
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-            Animator = GetComponentInChildren<Animator>();
+            animator = GetComponentInChildren<Animator>();
         }
         public void SetFacing(float x)
         {

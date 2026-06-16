@@ -10,10 +10,10 @@ namespace Gameplay.Player.FSM
         protected static readonly int JumpHash = Animator.StringToHash("Jump");
         protected static readonly int IdleHash = Animator.StringToHash("Idle");
         protected static readonly int FallHash = Animator.StringToHash("Fall");
-        protected static readonly int DownJumpHash = Animator.StringToHash("DownJump"); 
+
         protected static readonly int SpeedHash = Animator.StringToHash("speed");
-        // 전환에 걸리는 시간
-        protected const float crossFadeDuration = 0.1f;
+
+        protected const float crossFadeDuration = 0.1f; // 전환에 걸리는 시간
         protected PlayerStateBase(PlayerDirector player)
         {
             this.player = player;

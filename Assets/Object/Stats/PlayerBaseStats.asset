@@ -16,5 +16,5 @@ MonoBehaviour:
   attack: 0
   defense: 0
   moveSpeed: 2.6
-  jumpForce: 8.5
-  gravity: 30
+  jumpForce: 10
+  gravity: -30
