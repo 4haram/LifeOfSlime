@@ -154,10 +154,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 216523434966269692}
-  - component: {fileID: 1017877731110016541}
   - component: {fileID: 4713940510859972836}
   - component: {fileID: 5034224787997538653}
-  - component: {fileID: 3116601618878048212}
   - component: {fileID: 4869976579315973403}
   - component: {fileID: 5342352914854860455}
   m_Layer: 0
@@ -184,23 +182,6 @@ Transform:
   - {fileID: 3621732166460041217}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1017877731110016541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534109515675015073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1bc247ab679984f8f7b015baffa530, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  input: {fileID: 4869976579315973403}
-  locomotion: {fileID: 3116601618878048212}
-  visual: {fileID: 5342352914854860455}
-  coyoteTime: 0.2
-  jumpBufferTime: 0.2
 --- !u!50 &4713940510859972836
 Rigidbody2D:
   serializedVersion: 5
@@ -265,25 +246,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.012252446, y: -0.042136706}
   m_Size: {x: 0.91386294, y: 0.6700516}
   m_Direction: 1
---- !u!114 &3116601618878048212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534109515675015073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b2da99547a21a749a9554b62872a876, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Player.PlayerLocomotion
-  moveSpeed: 1.5
-  jumpForce: 6.8
-  groundCheckPoint: {fileID: 2230445677520773242}
-  groundCheckSize: {x: 0.6, y: 0.02}
-  groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!114 &4869976579315973403
 MonoBehaviour:
   m_ObjectHideFlags: 0

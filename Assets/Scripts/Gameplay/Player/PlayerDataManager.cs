@@ -5,7 +5,8 @@ namespace Gameplay.Player
     public class PlayerDataManager : MonoBehaviour
     {
         public static PlayerDataManager Instance;
-        [SerializeField] private UnitBaseStatsSO baseStatsConfig;   // 에셋에서 할당
+        // 에셋에서 할당
+        [SerializeField] private UnitBaseStatsSO baseStatsConfig;
 
         public UnitStats CurrentStats { get; private set; }
 
